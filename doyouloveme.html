@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>doYouLoveMe</title>
+</head>
+<body>
+<h1 style="position: absolute;left:220px;top:175px;">Do you love me</h1>
+<button  onclick="yesClick()" style="position: absolute;left:285px;top:235px;">Yes</button>
+<button  id="btnNo" onmouseout="noHoOver()" style="position: absolute; left: 360px; top: 235px;">
+    NO</button>
+<script>
+    function yesClick(){
+        alert("you are right");
+    }
+    function noHoOver(){
+        let x = Math.round(Math.random()*window.innerWidth);
+        let y = Math.round(Math.random()*window.innerHeight);
+        document.getElementById("btnNo").style.left = x + 'px';
+        document.getElementById("btnNo").style.top = y +'px';
+    }
+</script>
+</body>
+</html>
